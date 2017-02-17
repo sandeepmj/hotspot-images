@@ -74,6 +74,7 @@ html, body {
     border: solid red;
     opacity: .75;
     z-index: 3;
+    display: block;
     /*background-image: url("/img/info.png");*/
     /*content: "i"; not working to add red i
     color: red;*/
@@ -106,7 +107,7 @@ h1 {
     /*height: 40%;*/
     background-color: yellow;
     opacity: .75;
-    /*display: none;*/
+    display: block;
     padding-top: 20px;
     position: absolute;
     top: 0px;
