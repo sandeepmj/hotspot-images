@@ -120,10 +120,26 @@ h1 {
     top: 0px;
     left: 0px;
     z-index: 2;
-    padding: 45px;
+    padding: 70px 15px 30px 15px;
     font-size: 1.5em;
     text-align: center;
     color: brown;
+}
+
+#btn_close {
+    position: absolute;
+    font-family: sans-serif;
+    top: 5%;
+    left: 86%;
+    font-size: 2em;
+    color: white;
+    z-index: 4;
+    opacity: 1;
+    font-weight: 900;
+    /*border: solid red;
+    border-radius: 100px;
+    padding: 20px;*/
+    */
 }
 
 img {
