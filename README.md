@@ -1,0 +1,1 @@
+# hotspot-images
