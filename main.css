@@ -73,7 +73,7 @@ html, body {
     background-color: white;
     border: solid red;
     opacity: .75;
-    z-index: 2;
+    z-index: 3;
     /*background-image: url("/img/info.png");*/
     /*content: "i"; not working to add red i
     color: red;*/
@@ -97,15 +97,42 @@ h1 {
 
 .photo-container {
     position: relative;
+    /*z-index: 1;*/
+}
+
+.info_slides {
+    width: 95%;
+    /*background-image: url("/img/slide.png");*/
+    /*height: 40%;*/
+    background-color: yellow;
+    opacity: .75;
+    /*display: none;*/
+    padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: 1;
+}
+
+.popIn-info {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    padding: 45px;
+    font-size: 1.5em;
+    text-align: center;
+    color: brown;
 }
 
 img {
     width: 93%;
     margin: 0 auto;
     padding-top: 10px;
-    /*position: relative;
-    z-index: 1;*/
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+    /*z-index: 1;*/
 }
 
 
