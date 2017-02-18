@@ -89,6 +89,14 @@ html, body {
     /* Must be in percentage or will move on different devices*/
     /*content: "i";
     color: red;*/
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.circle_banana_hide {
+    opacity: 0;
 }
 
 #circle_grapes {
@@ -114,7 +122,7 @@ h1 {
 
 .info_slides {
     width: 95%;
-    /*background-image: url("/img/slide.png");*/
+    /*background-image: url("../img/slide.png");*/
     /*height: 40%;*/
     background-color: yellow;
     opacity: .75;
