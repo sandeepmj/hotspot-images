@@ -1,7 +1,8 @@
 $(document).ready(function () {
 	$('#circle_banana').click(function () {
 		console.log('Banana');
-		$('#circle_banana').addClass('circle_banana_hide');
-		$('#info_banana').addClass('info_slides');
+		$('#circle_banana, #circle_grapes').addClass('hide_btn');
+		$('#slide').addClass('info_slides_show');
+		$('#popIn').text('The Banana is a year-round favorite, great tasting, nutritious, inexpensive and comes hermetically sealed.').addClass('popIn-info');
 	});
 });
