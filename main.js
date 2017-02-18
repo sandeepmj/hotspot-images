@@ -20,4 +20,15 @@ $(document).ready(function () {
 		$('#popIn').text('The diminutive grape comes in green and red. Best sipped after fermenting.').addClass('popIn-info');
 	});
 
+	/*close info window*/
+
+	$('#X-close').click(function () {
+		$('#X-close').removeClass('btn_close_show'); /* hide close X*/
+		$('#slide').removeClass('info_slides_show'); /*remove info window*/
+		/*dont' seem to need to remove popIn-info*/
+		$('.circle').removeClass('hide_btn'); /*show circles*/
+
+
+	});
+
 });
