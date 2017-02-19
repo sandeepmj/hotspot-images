@@ -88,8 +88,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         -moz-transition: opacity 5s ease-in;
         -o-transition: opacity 5s ease-in;
         transition: opacity 5s ease-in;
-        /*content: "i";
-    color: red;*/
     }
 
     #circle_grapes {
@@ -99,8 +97,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         /* Must be in percentage or will move on different devices*/
         left: 60%;
         /* Must be in percentage or will move on different devices*/
-        /*content: "i";
-    color: red;*/
     }
 
     h1 {
@@ -174,7 +170,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         #popIn {
             font-size: 5em;
             padding: 200px 15px 30px 15px;
-            /*display: none;*/
         }
         .btn_close {
             font-size: 4em;
