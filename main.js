@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () { // we must wait for the DOM to be ready as the browser can take a little while to read all of the HTML and build the elements
 	/*function used in several places to show slide info*/
 	var showInfo = function () {
 		$('.circle').addClass('hide_btn'); /*.circle so it closes all circles.*/
@@ -6,28 +6,18 @@ $(document).ready(function () {
 		$('#slide').addClass('info_slides_show');
 	}
 
-	/*Banana info*/
-	$('#circle_banana').click(function () {
-		showInfo();
-		$('#popIn').text('The Banana is a year-round favorite, great tasting, nutritious, inexpensive and comes hermetically sealed.').addClass('popIn-info');
+	$(".circle").on("click", function (e) {
+		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
+		var circle_clicked = $(this),
+			text = circle_clicked.data("text"); //looks for the data-text attribute and stores its value
+
+		$("#popIn").text(text);
+
+		$("#slide").addClass("active");
 	});
 
-
-	/*grapes info*/
-	$('#circle_grapes').click(function () {
-		showInfo();
-		$('#popIn').text('The diminutive grape comes in green and red. Best sipped after fermenting.').addClass('popIn-info');
+	$(".btn_close").on("click", function (e) {
+		e.preventDefault();
+		$("#slide").removeClass("active");
 	});
-
-	/*close info window*/
-
-	$('#X-close').click(function () {
-		$('#X-close').removeClass('btn_close_show'); /* hide close X*/
-		$('#slide').removeClass('info_slides_show'); /*remove info window*/
-		/*dont' seem to need to remove popIn-info*/
-		$('.circle').removeClass('hide_btn'); /*show circles*/
-
-
-	});
-
 });

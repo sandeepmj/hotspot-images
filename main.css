@@ -116,35 +116,33 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
     .info_slides {
         width: 100%;
-        background-color: yellow;
-        opacity: .75;
-        display: none;
-        /*padding-top: 20px;*/
+        background-color: rgba(255, 255, 0, .75);
+        /* this is yellow, but with a translucent background */
         position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 2;
+        opacity: 0;
+        z-index: 0;
+        /* While dial the z-index down because even if an element doesn't have opacity it still has 'mass'. The info window would get in the way of clicking on the circles without this */
+        transition: opacity .5s ease-in-out;
+        /* this gives us the fade in and fade out effect but only on the opacity element. You cannot use the display property with transitions. */
     }
 
-    .info_slides_show {
-        display: block;
+    .info_slides.active {
+        z-index: 4;
+        /* We give the info_slides a higher z-index on active */
+        opacity: 1;
     }
 
-    .hide_btn {
-        display: none;
-    }
-
-    .popIn-info {
+    #popIn {
         position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 3;
         padding: 70px 15px 30px 15px;
         font-size: 1.5em;
         text-align: center;
         color: brown;
         height: 100%;
-        /*display: none;*/
     }
 
     .btn_close {
@@ -156,11 +154,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         color: white;
         z-index: 4;
         font-weight: 900;
-        display: none;
-    }
-
-    .btn_close_show {
-        display: block;
     }
 
     img {
@@ -178,7 +171,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
         .circle:hover {
             background-color: purple;
         }
-        .popIn-info {
+        #popIn {
             font-size: 5em;
             padding: 200px 15px 30px 15px;
             /*display: none;*/
