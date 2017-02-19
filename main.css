@@ -56,6 +56,16 @@ You will find this is far easier than the opposite task of using CSS to cram you
         font-size: 1.3em;
     }
 
+    .caption {
+        color: gray;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    .credit {
+        font-weight: 400;
+    }
+
     .circle {
         width: 30px;
         height: 30px;
@@ -109,7 +119,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
         background-color: yellow;
         opacity: .75;
         display: none;
-        padding-top: 20px;
+        /*padding-top: 20px;*/
         position: absolute;
         top: 0px;
         left: 0px;
@@ -165,4 +175,18 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
     @media(min-width: 729px) {
         /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+        .circle:hover {
+            background-color: purple;
+        }
+        .popIn-info {
+            font-size: 5em;
+            padding: 200px 15px 30px 15px;
+            /*display: none;*/
+        }
+        .btn_close {
+            font-size: 4em;
+        }
+        .btn_close:hover {
+            color: blue;
+        }
     }
