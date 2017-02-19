@@ -56,13 +56,9 @@ html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
 }
 
-#main-container {
+.main-text, h1 {
     margin: 10px;
     padding: 10px;
-}
-
-.main-text {
-    margin-right: 20px;
     font-size: 1.3em;
 }
 
@@ -75,9 +71,6 @@ html, body {
     opacity: .75;
     z-index: 3;
     display: block;
-    /*background-image: url("/img/info.png");*/
-    /*content: "i"; not working to add red i
-    color: red;*/
 }
 
 #circle_banana {
@@ -116,12 +109,13 @@ h1 {
 }
 
 .photo-container {
+    width: 100%;
     position: relative;
     /*z-index: 1;*/
 }
 
 .info_slides {
-    width: 95%;
+    width: 100%;
     /*background-image: url("../img/slide.png");*/
     /*height: 40%;*/
     background-color: yellow;
@@ -159,7 +153,7 @@ h1 {
     position: absolute;
     font-family: sans-serif;
     top: 5%;
-    left: 86%;
+    left: 92%;
     font-size: 2em;
     color: white;
     z-index: 4;
@@ -177,9 +171,9 @@ h1 {
 }
 
 img {
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     /*position: absolute;
     top: 0px;
     left: 0px;*/
