@@ -8,7 +8,8 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 
 		$("#popIn").text(text); //assign the text for the element to the popIn container in the slide
 
-		$("#slide").addClass("active"); //add a class="active" to #slide to apply the #slide.active styles to it, making it visible
+		$("#slide").addClass("active");
+		//add a class="active" to #slide to apply the #slide.active styles to it, making it visible
 	});
 
 	$(".btn_close").on("click", function (e) {
