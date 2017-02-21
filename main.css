@@ -56,6 +56,11 @@ You will find this is far easier than the opposite task of using CSS to cram you
         font-size: 1.3em;
     }
 
+    h1 {
+        padding-bottom: 10px;
+        font-size: 2em;
+    }
+
     .caption {
         color: gray;
         font-size: 1em;
@@ -93,7 +98,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
     }
 
     #circle_grapes {
-        /*background-color: purple;*/
         position: absolute;
         top: 75%;
         /* Must be in percentage or will move on different devices*/
@@ -101,11 +105,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         /* Must be in percentage or will move on different devices*/
         /*content: "i";
     color: red;*/
-    }
-
-    h1 {
-        padding-bottom: 10px;
-        font-size: 2em;
     }
 
     .photo-container {
