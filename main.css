@@ -152,7 +152,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
         opacity: 1;
     }
 
-    #popIn {
+    .info_popIn {
         position: absolute;
         top: 0px;
         left: 0px;
