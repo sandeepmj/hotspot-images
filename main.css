@@ -88,13 +88,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
         top: 25%;
         /* Must be in percentage or will move on different devices*/
         left: 70%;
-        /* Must be in percentage or will move on different devices*/
-        /*-webkit-transition: opacity 5s ease-in;
-        -moz-transition: opacity 5s ease-in;
-        -o-transition: opacity 5s ease-in;
-        transition: opacity 5s ease-in;*/
-        /*content: "i";
-    color: red;*/
     }
 
     #circle_grapes {
@@ -103,8 +96,24 @@ You will find this is far easier than the opposite task of using CSS to cram you
         /* Must be in percentage or will move on different devices*/
         left: 60%;
         /* Must be in percentage or will move on different devices*/
-        /*content: "i";
-    color: red;*/
+    }
+    
+    #circle_chair {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 30%;
+        /* Must be in percentage or will move on different devices*/
+        left: 20%;
+        /* Must be in percentage or will move on different devices*/
+    }
+
+    #circle_broom {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 70%;
+        /* Must be in percentage or will move on different devices*/
+        left: 73%;
+        /* Must be in percentage or will move on different devices*/
     }
 
     .photo-container {
