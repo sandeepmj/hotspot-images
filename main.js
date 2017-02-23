@@ -4,6 +4,8 @@ $(document).ready(function () { // we must wait for the DOM to be ready as the b
 		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
 		var circle_clicked = $(this),
 			text = circle_clicked.data("text"); //looks for the data-text attribute and stores its value
+		popUp = circle_clicked.closest('.photo-container').find(".info_slides");
+		popUp.addClass('active');
 
 
 		$("#popIn").text(text); //assign the text for the element to the popIn container in the slide
