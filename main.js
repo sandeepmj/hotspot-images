@@ -2,7 +2,7 @@ $(document).ready(function () {
 	/*function used in several places to show slide info*/
 	var showInfo = function () {
 		$('.circle').addClass('hide_btn'); /*.circle so it closes all circles.*/
-		$('#X-close').addClass('btn_close_show');
+		$('#X1-close').addClass('btn_close_show');
 		$('#slide').addClass('info_slides_show');
 	}
 
@@ -21,8 +21,8 @@ $(document).ready(function () {
 
 	/*close info window*/
 
-	$('#X-close').click(function () {
-		$('#X-close').removeClass('btn_close_show'); /* hide close X*/
+	$('#X1-close').click(function () {
+		$('#X1-close').removeClass('btn_close_show'); /* hide close X*/
 		$('#slide').removeClass('info_slides_show'); /*remove info window*/
 		/*dont' seem to need to remove popIn-info*/
 		$('.circle').removeClass('hide_btn'); /*show circles*/
