@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	/*function used in several places to show slide info*/
+	/*function used in several places to show slide info in photo1*/
 	var showInfo = function () {
 		$('.circle').addClass('hide_btn'); /*.circle so it closes all circles.*/
 		$('#X1-close').addClass('btn_close_show');
@@ -27,7 +27,39 @@ $(document).ready(function () {
 		/*dont' seem to need to remove popIn-info*/
 		$('.circle').removeClass('hide_btn'); /*show circles*/
 
+	}); /*closes function for photo 1*/
+
+	/*Start functions for photo2*/
+
+	var showInfo2 = function () {
+		$('.circle').addClass('hide_btn'); /*.circle so it closes all circles.*/
+		$('#X2-close').addClass('btn_close_show');
+		$('#slide2').addClass('info_slides_show');
+	}
+
+	/*chair info*/
+	$('#circle_chair').click(function () {
+		showInfo2();
+		$('#popIn2').text('Chair for bathing. rusted. wheels don\'t turn').addClass('popIn-info');
+	});
+
+
+	/*broom info*/
+	$('#circle_broom').click(function () {
+		showInfo2();
+		$('#popIn2').text('Bristle brush broom withstands mold and rough floors.').addClass('popIn-info');
+	});
+
+	/*close info window*/
+
+	$('#X2-close').click(function () {
+		$('#X2-close').removeClass('btn_close_show'); /* hide close X*/
+		$('#slide2').removeClass('info_slides_show'); /*remove info window*/
+		/*dont' seem to need to remove popIn-info*/
+		$('.circle').removeClass('hide_btn'); /*show circles*/
 
 	});
+
+	/*closes functions for photo2*/
 
 });
